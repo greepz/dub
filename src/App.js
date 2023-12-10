@@ -8,9 +8,9 @@ import NotFound from './components/NotFound';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/dub">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<BuyerInterface />} />
         <Route path="/seller" element={<SellerInterface />} />
         <Route path="/buyer" element={<BuyerInterface />} />
         <Route path="/product/:productId" element={<ProductDetails />} />
